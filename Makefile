@@ -19,3 +19,6 @@ docs-prod: ssg
 dev:
 	go run main.go --http-address localhost:3000 --domain testing.ssi.sh
 .PHONY: dev
+
+sish:
+	go build -o sish ./main.go
